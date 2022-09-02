@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    background: rgba(0, 255, 255, 0.239);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-cayan {
+    background: rgb(10, 49, 49);
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+.tipCalculator {
+    width: 860px;
+    background: #fff;
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+label {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+input {
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 2px;
+    border: 1px solid rgba(34, 34, 34, 0.279);
+    margin: 5px 0px;
+}
+input:focus {
+    outline: none;
+}
+#custom {
+    display: inline;
+    width: 90px;
+    background: rgba(0, 0, 0, 0.857);
+    color: #fff;
+    text-transform: uppercase;
+}
+p {
+    font-size: 16px;
+    color: rgba(34, 34, 34, 0.799);
+    text-transform: capitalize;
+    margin: 10px 0px;
+}
+.right p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.right p span{
+    font-weight: 600;
+    font-size: 40px;
+    color: cyan;
+}
+h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 10px 0px;
+}
+button {
+    padding: 8px 30px;
+    background: rgb(14, 63, 63);
+    color: #fff;
+    border: none;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.reset{
+    width: 100%;
+    padding: 8px 10px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 60px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.error{
+    font-size: 14px;
+    color: red;
+    font-weight: 600;
+    display: none;
+}
+.showError{
+    display: block;
+}
+
+/* layout */
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 24px;
+}
+.col-6 {
+    grid-column: span 6;
+}
+@media only screen and (max-width: 800px ) {
+ .col-sm-12{
+    grid-column: span 12;
+ }
+}
